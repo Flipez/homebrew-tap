@@ -12,14 +12,14 @@ class RocketLang < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Flipez/rocket-lang/releases/download/v0.9.5/rocket-lang_darwin_amd64.tar.gz"
-      sha256 "43f87bdae96749c7709e3446b6525eb36ed5fb7d8e36862460171d803ce40c56"
+      sha256 "14518009ea6a45f558825a2ead0f29749479de68c509f383502f94c3040270b0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/Flipez/rocket-lang/releases/download/v0.9.5/rocket-lang_linux_amd64.tar.gz"
-      sha256 "55c37c68812e878611f55350d9f69711eaf84e70b8238e1ffa6f3a0c7dd67085"
+      sha256 "92758dafdc4246636d700da8c71ef07aaaeb26f030dcbeeb5301be476445c042"
     end
   end
 
