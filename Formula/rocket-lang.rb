@@ -5,13 +5,13 @@
 class RocketLang < Formula
   desc ""
   homepage "https://auch.cool/"
-  version "0.14.1"
+  version "0.14.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Flipez/rocket-lang/releases/download/v0.14.1/rocket-lang_darwin_amd64.tar.gz"
-      sha256 "1a48304cdc7cbd7a29e4307397954e53211546a9242c4f46dc16779b8fbfa212"
+      url "https://github.com/Flipez/rocket-lang/releases/download/v0.14.2/rocket-lang_darwin_amd64.tar.gz"
+      sha256 "431890aaca8ac4d82947df041efbd5718c3d683dc87fd6cae5dcaf2737c3b70a"
 
       def install
         bin.install "rocket-lang"
@@ -21,8 +21,8 @@ class RocketLang < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Flipez/rocket-lang/releases/download/v0.14.1/rocket-lang_linux_amd64.tar.gz"
-      sha256 "ad9b03a7daf94abf24f857a57e761039e8508ecc76056919d0ffb146ed084b96"
+      url "https://github.com/Flipez/rocket-lang/releases/download/v0.14.2/rocket-lang_linux_amd64.tar.gz"
+      sha256 "7576dbaa8202afaf37877dae46643dec87f3ecf9d7e71d6c40c3caff8090fee7"
 
       def install
         bin.install "rocket-lang"
