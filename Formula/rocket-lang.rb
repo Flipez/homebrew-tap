@@ -5,21 +5,21 @@
 class RocketLang < Formula
   desc ""
   homepage "https://auch.cool/"
-  version "0.17.0"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/Flipez/rocket-lang/releases/download/v0.17.0/rocket-lang_darwin_arm64.tar.gz"
-      sha256 "ff6210b664a1086eab455fc8317bad0fb54861aa7312c65c754b7f4b3aafc899"
+    if Hardware::CPU.intel?
+      url "https://github.com/Flipez/rocket-lang/releases/download/v0.16.0/rocket-lang_darwin_amd64.tar.gz"
+      sha256 "efd2217fb06a990c6b4abdb8cc05c256b413d8fd86e5dded9c075f34dc496c1f"
 
       def install
         bin.install "rocket-lang"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/Flipez/rocket-lang/releases/download/v0.17.0/rocket-lang_darwin_amd64.tar.gz"
-      sha256 "3e5743f01540d7b04a38e03c6627039ce26d3c34ce72480f99c40bf7102edcc1"
+    if Hardware::CPU.arm?
+      url "https://github.com/Flipez/rocket-lang/releases/download/v0.16.0/rocket-lang_darwin_arm64.tar.gz"
+      sha256 "7323659815ac04fa5863cb88c3fc1a7786c3813ff9f3d95d1dbe2fdd923c1cc0"
 
       def install
         bin.install "rocket-lang"
@@ -28,25 +28,25 @@ class RocketLang < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Flipez/rocket-lang/releases/download/v0.17.0/rocket-lang_linux_arm.tar.gz"
-      sha256 "ef22b9d2483015836918c55a27d4b930bdcfb7aea5b002f07e3d9e21b1daba06"
+    if Hardware::CPU.intel?
+      url "https://github.com/Flipez/rocket-lang/releases/download/v0.16.0/rocket-lang_linux_amd64.tar.gz"
+      sha256 "36d198cbb39ae3745da010185f43c3a8c34a89358ec1bcdbf9b2b004ec47a174"
 
       def install
         bin.install "rocket-lang"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/Flipez/rocket-lang/releases/download/v0.17.0/rocket-lang_linux_amd64.tar.gz"
-      sha256 "9b0743b931c06eb43d2944e9f053d17ae62df17d65ebad1e6bb366574e750a71"
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/Flipez/rocket-lang/releases/download/v0.16.0/rocket-lang_linux_arm.tar.gz"
+      sha256 "8a8c961d9d84da0c86f37654a042c3161450e3edf057f3e530fe0aaf72d1029e"
 
       def install
         bin.install "rocket-lang"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Flipez/rocket-lang/releases/download/v0.17.0/rocket-lang_linux_arm64.tar.gz"
-      sha256 "5d3efa50092b8ea4887b8938e9ddaada818fc3fc789b4702f83596f2d33443a4"
+      url "https://github.com/Flipez/rocket-lang/releases/download/v0.16.0/rocket-lang_linux_arm64.tar.gz"
+      sha256 "21022826a4ac7c7df667fd515335f3e6fd026b0f3529017713d743b2df9b3d16"
 
       def install
         bin.install "rocket-lang"
